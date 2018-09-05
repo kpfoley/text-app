@@ -3,7 +3,7 @@
   "short_name": "DFTE",
   "description": "A fork of the native Chrome OS text editor with deliberately limited functionality for classroom use.",
   "default_locale": "en",
-  "version": "0.5.0.8",
+  "version": "0.5.0.9",
   "icons": {
     "16": "icon/16x16.png",
     "32": "icon/32x32.png",
@@ -13,7 +13,7 @@
     "128": "icon/128x128.png",
     "256": "icon/256x256.png"
   },
-     "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhrCSe7OuYkgui8JHwNeNfB4dg3AFnK2e2pMJONTmInivKOvQu96co6VLk7dx016X+9t+c4TVrwDgQXbMmw+qY7GUdJPhS6T73aFc49WFT4wtw4rMzS95JoMK6nJg7f71br9GKhHdYWjJ4mI7s6HymI0dSkdcSmaFOM+0TBANImbQeoNAKHVJK0T1xkFDoJNqObgU+BAjwyXUqBwdA/Sr+TT0IoWjsuDlmxylEjoXqljNq23QfBs/Qc88FHbc7mp2bHn2QsMOZLw/JpNqpX+nXKbOqKbblC3mnjfZrbdU868cFsk4UrDeo3HyJxFQQUGwuRx8VjayXEeIVUTTknddqwIDAQAB",
+  
   "manifest_version": 2,
   "minimum_chrome_version": "31.0",
   "offline_enabled": true,

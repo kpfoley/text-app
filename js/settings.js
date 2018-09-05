@@ -28,16 +28,16 @@ Settings.AREA = 'sync';
 Settings.SETTINGS = {
   'analytics': {'default': false, 'type': 'boolean', 'widget': 'checkbox'},
   'alwaysontop': {'default': false, 'type': 'boolean', 'widget': 'checkbox'},
-  'fontsize': {'default': 16, 'type': 'number', 'widget': 'number'},
-  'linenumbers': {'default': true, 'type': 'boolean', 'widget': 'checkbox'},
+  'fontsize': {'default': 18, 'type': 'number', 'widget': 'number'},
+  'linenumbers': {'default': false, 'type': 'boolean', 'widget': 'checkbox'},
   'margin': {'default': false, 'type': 'boolean', 'widget': 'checkbox'},
   'margincol': {'default': 80, 'type': 'integer', 'widget': 'number'},
   'sidebaropen': {'default': false, 'type': 'boolean', 'widget': null},
   'sidebarwidth': {'default': 220, 'type': 'integer', 'widget': null},
-  'smartindent': {'default': true, 'type': 'boolean', 'widget': 'checkbox'},
-  'spacestab': {'default': true, 'type': 'boolean', 'widget': 'checkbox'},
+  'smartindent': {'default': false, 'type': 'boolean', 'widget': 'checkbox'},
+  'spacestab': {'default': false, 'type': 'boolean', 'widget': 'checkbox'},
   'tabsize': {'default': 4, 'type': 'integer', 'widget': 'number'},
-  'theme': {'default': 'default', 'type': 'string', 'widget': 'select'},
+  'theme': {'default': 'dark', 'type': 'string', 'widget': 'select'},
   'wraplines': {'default': true, 'type': 'boolean', 'widget': 'checkbox'}
 };
 

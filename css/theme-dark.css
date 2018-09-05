@@ -48,29 +48,29 @@ body[theme="dark"] #settings-list select option {
 /* Based on CodeMirror dark theme */
 /* Based on Sublime Text's dark theme */
 
-.cm-s-default.CodeMirror {background: #272822; color: #f8f8f2;}
-.cm-s-default div.CodeMirror-selected {background: #49483E !important;}
-.cm-s-default .CodeMirror-gutters {background: #272822; border-right: 0px;}
-.cm-s-default .CodeMirror-linenumber {color: #272822;}
-.cm-s-default .CodeMirror-cursor {border-left: 1px solid #f8f8f0 !important;}
+.cm-s-dark.CodeMirror {background: #272822; color: #f8f8f2;}
+.cm-s-dark div.CodeMirror-selected {background: #49483E !important;}
+.cm-s-dark .CodeMirror-gutters {background: #272822; border-right: 0px;}
+.cm-s-dark .CodeMirror-linenumber {color: #d0d0d0;}
+.cm-s-dark .CodeMirror-cursor {border-left: 1px solid #f8f8f0 !important;}
 
-.cm-s-default span.cm-comment {color: #75715e;}
-.cm-s-default span.cm-atom {color: #ae81ff;}
-.cm-s-default span.cm-number {color: #ae81ff;}
+.cm-s-dark span.cm-comment {color: #75715e;}
+.cm-s-dark span.cm-atom {color: #ae81ff;}
+.cm-s-dark span.cm-number {color: #ae81ff;}
 
-.cm-s-default span.cm-property, .cm-s-default span.cm-attribute {color: #a6e22e;}
-.cm-s-default span.cm-keyword {color: #f92672;}
-.cm-s-default span.cm-string {color: #e6db74;}
+.cm-s-dark span.cm-property, .cm-s-dark span.cm-attribute {color: #a6e22e;}
+.cm-s-dark span.cm-keyword {color: #f92672;}
+.cm-s-dark span.cm-string {color: #e6db74;}
 
-.cm-s-default span.cm-variable {color: #a6e22e;}
-.cm-s-default span.cm-variable-2 {color: #9effff;}
-.cm-s-default span.cm-def {color: #fd971f;}
-.cm-s-default span.cm-error {background: #f92672; color: #f8f8f0 !important;}
-.cm-s-default span.cm-bracket {color: #f8f8f2;}
-.cm-s-default span.cm-tag {color: #f92672;}
-.cm-s-default span.cm-link {color: #ae81ff;}
+.cm-s-dark span.cm-variable {color: #a6e22e;}
+.cm-s-dark span.cm-variable-2 {color: #9effff;}
+.cm-s-dark span.cm-def {color: #fd971f;}
+.cm-s-dark span.cm-error {background: #f92672; color: #f8f8f0 !important;}
+.cm-s-dark span.cm-bracket {color: #f8f8f2;}
+.cm-s-dark span.cm-tag {color: #f92672;}
+.cm-s-dark span.cm-link {color: #ae81ff;}
 
-.cm-s-default .CodeMirror-matchingbracket {
+.cm-s-dark .CodeMirror-matchingbracket {
   text-decoration: underline;
   color: white !important;
 }
