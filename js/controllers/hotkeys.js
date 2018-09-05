@@ -89,22 +89,7 @@ HotkeysController.prototype.onKeydown_ = function(e) {
         }
         break;
 
-      case this.KEY.ZERO:
-      case this.KEY.NUMPAD_ZERO:
-        this.settings_.reset('fontsize');
-        return false;
 
-      case this.KEY.PLUS:
-      case this.KEY.NUMPAD_PLUS:
-        var fontSize = this.settings_.get('fontsize');
-        this.settings_.set('fontsize', fontSize * this.ZOOM_IN_FACTOR);
-        return false;
-
-      case this.KEY.MINUS:
-      case this.KEY.NUMPAD_MINUS:
-        var fontSize = this.settings_.get('fontsize');
-        this.settings_.set('fontsize', fontSize * this.ZOOM_OUT_FACTOR);
-        return false;
     }
   } else if (e.altKey) {
     if (e.keyCode === this.KEY.SPACE) {
@@ -115,12 +100,4 @@ HotkeysController.prototype.onKeydown_ = function(e) {
 };
 
 HotkeysController.prototype.onMouseWheel_ = function(e) {
-  if (e.ctrlKey || e.metaKey) {
-    var fontSize = this.settings_.get('fontsize');
-    if (e.wheelDelta > 0) {
-      this.settings_.set('fontsize', fontSize * this.ZOOM_IN_FACTOR);
-    } else {
-      this.settings_.set('fontsize', fontSize * this.ZOOM_OUT_FACTOR);
-    }
-  }
 };

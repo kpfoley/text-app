@@ -1,21 +1,27 @@
 body[theme="default"] header {
-  background-color: #F5F5F5;
+  background-color: #DDD;
+}
+
+body[theme="default"] .search-container {
+  border-color: #C1C1C1;
 }
 
 body[theme="default"] .search-navigation-button {
-  background-color: #F5F5F5;
+  background-color: #DDD;
+  border-color: #C1C1C1;
 }
+
 body[theme="default"] .search-navigation-button:focus {
-  background-color: #FFF;
+  background-color: #EEE;
 }
 
 body[theme="default"] #sidebar {
-  background-color: #333;
+  background-color: #272822;
   -webkit-box-shadow: inset -10px 0 7px -4px rgba(0,0,0,0.5);
 }
 
 body[theme="default"] #settings-menu {
-  background-color: #333;
+  background-color: #272822;
 }
 
 body[theme="default"] #sidebar li:hover {
@@ -35,15 +41,15 @@ body[theme="default"] #settings-list select {
 }
 
 body[theme="default"] #settings-list select option {
-  background-color: #333;
+  background-color: #272822;
 }
 
 
-body[theme="default"] div.CodeMirror span.CodeMirror-matchingbracket {
+body[theme="dark"] div.CodeMirror span.CodeMirror-matchingbracket {
   color: inherit !important;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #f8f8f2;
 }
 
-body[theme="default"] div.CodeMirror span.CodeMirror-nonmatchingbracket {
+body[theme="dark"] div.CodeMirror span.CodeMirror-nonmatchingbracket {
   color: inherit !important;
 }

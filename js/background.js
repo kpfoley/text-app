@@ -6,35 +6,16 @@ function Background() {
   this.windows_ = [];
 }
 
-/**
- * @return {boolean}
- * True if the system window frame should be shown. It is on the systems where
- * borderless window can't be dragged or resized.
- */
-Background.prototype.ifShowFrame_ = function() {
-  var version = parseInt(navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10);
-  var os = 'other';
-  if (navigator.appVersion.indexOf('Linux') != -1) {
-    os = 'linux';
-  } else if (navigator.appVersion.indexOf('CrOS') != -1) {
-    os = 'cros';
-  } else if (navigator.appVersion.indexOf('Mac OS X') != -1) {
-    os = 'mac';
-  }
-
-  return os === 'linux' && version < 27 ||
-         os === 'mac' && version < 25;
-};
-
 Background.prototype.newWindow = function() {
   var appWindowId = 'appWindow' + this.windows_.length;
   var options = {
-    id: appWindowId,
-    frame: (this.ifShowFrame_() ? 'chrome' : 'none'),
-    minWidth: 400,
-    minHeight: 400,
-    width: 700,
-    height: 700
+    'id': appWindowId,
+    'state': 'fullscreen',
+    'frame': 'none', 
+    'bounds': {
+                'width': 1280,
+                'height': 1024
+            }
   };
 
 
@@ -122,7 +103,7 @@ Background.prototype.retainFiles_ = function(toRetain) {
  */
 Background.prototype.onWindowReady = function(textApp) {
   this.windows_.push(textApp);
-  textApp.setHasChromeFrame(this.ifShowFrame_());
+  textApp.setHasChromeFrame(false);
 
   if (this.entriesToOpen_.length > 0) {
     textApp.openEntries(this.entriesToOpen_);
